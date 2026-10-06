@@ -1,0 +1,6 @@
+a = float("123")
+b = round(float("7.9"))
+c = int(float("7.2"))
+print("a is a ", type(a),"and value is ", a)
+print("b is a ", type(b),"and value is ", b)
+print("c is a ", type(c),"and value is ", c)
