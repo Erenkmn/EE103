@@ -8,8 +8,9 @@ while True:
         break
     
     elif counter == 5:
-        print("You used all your chances :'(")   
-        break
+          while True:
+            print("Oh Noooooooooooo...")
+        
     else:
         print("Try again, you also have ",5-counter," chances left")
         guess = int(input("Guess the secret number between 1 and 10: "))
