@@ -1,11 +1,15 @@
 from secret_number import secretNum 
 counter = 0
 guess = int(input("Guess the secret number between 1 and 10: "))
-while guess != secretNum:
+while True:
     counter +=1 
     if guess == secretNum:
         print("You answered correct!!!!")
         break
+    
+    elif counter == 5:
+        print("You used all your chances :'(")   
+        break
     else:
         print("Try again, you also have ",5-counter," chances left")
-print("You used all your chances :'(")
+        guess = int(input("Guess the secret number between 1 and 10: "))
