@@ -69,7 +69,51 @@ while True:
     c+= 2                
 """
 
+""" part6:
 x = 0
 for i in range(10):
     x += 0.1
 print(x)
+#because of the floating point precision, the output will be 0.9999999999999999 instead of 1.0
+#computers dont store decimal numbers in binary format, which can lead to small rounding errors when performing arithmetic operations.
+ """
+
+
+""" Part7:
+binary =""
+num=int(input("Enter a number: "))
+while num!=1:
+
+    a=num%2
+    binary = str(a) + binary
+    num//=2
+print("Your number in binary is: " + binary[::-1]) """
+
+""" part8:
+binary = ""
+
+num = float(input("Enter a number 0 with decimal places: "))
+while num%1 != 0:
+    num *= 2
+    a = int(num)
+    binary += str(a)
+    num -= a
+print("Your number in binary is: 0." + binary)     """
+
+
+
+""" part9:
+binary = ""
+timer = 0
+num = float(input("Enter a number 0 with decimal places: "))
+while (num%1 != 0) and (timer < 10):
+    num *= 2
+    a = int(num)
+    binary += str(a)
+    num -= a
+    timer += 1
+print("Your number in binary is: 0." + binary) """
+
+
+   
+
